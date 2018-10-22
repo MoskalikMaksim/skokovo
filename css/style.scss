@@ -1,0 +1,233 @@
+$primary-color: #fe504f;
+$white: #fff;
+$grey: #adadad;
+$black: #000;
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+header{
+  background-image: url(../img/bg-img.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  &::before{
+    position: absolute;
+    content: '';
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: #000;
+    opacity: 0.7;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+
+.standart-padding{
+  padding: 40px 0;
+}
+
+p{
+  font-weight: 300;
+}
+
+.text-grey{
+  color: $grey;
+}
+
+.text-black{
+  color: $black;
+}
+
+.text-white{
+  color: $white;
+}
+
+.text-primary{
+  color: $primary-color;
+}
+
+.logo{
+  color: $primary-color !important;
+  font-size: 32px;
+  margin: 0;
+}
+
+.navbar{
+  padding: 0 !important;
+}
+
+.nav-item{
+  margin-right: 15px;
+}
+
+.nav-link{
+  position: relative;
+  color: $white !important;
+}
+
+.nav-link::before{
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: $primary-color;
+  transition: 0.2s;
+}
+.nav-link:hover::before{
+  width: 100%;
+}
+
+.title,.text{
+  color: $white;
+}
+
+.title{
+  font-size: 50px;
+}
+
+.text{
+  width: 90%;
+}
+
+.btn-rounded{
+  padding: 15px 40px;
+  border-radius: 30px;
+}
+
+.btn-start, .btn-contact{
+  background-color: $primary-color;
+  color: #fff;
+  margin-right: 15px;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #cc3e3d;
+  }
+}
+
+.btn-contact{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  margin-top: 35px;
+}
+
+.btn-more{
+  background-color: #343434;
+  color: #fff;
+  &:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #221f1f;
+  }
+}
+
+.services-name{
+  font-weight: 700;
+}
+
+.hr-services{
+  margin-top: -10px;
+  width: 61px;
+  height: 3px;
+  background-color: $primary-color;
+}
+
+.info-services{
+  padding: 0 3%;
+}
+
+.contact-us{
+  background-image: url(../img/contact/img-bg_2.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: #000;
+    opacity: 0.7;
+  }
+}
+
+.contact-us-block{
+  padding: 100px 0;
+}
+
+.title-contact{
+  font-size: 36px;
+  color: $white;
+}
+
+.title_primary-color{
+  color: $primary-color;
+  position: relative;
+  &:before{
+    content: '';
+    top: 35px;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: $primary-color;
+  }
+}
+
+.team-photo{
+  width: 185px;
+  height: 185px;
+}
+
+figure{
+  position: relative;
+  margin: 0;
+}
+
+.description__text{
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $primary-color;
+  opacity: 0;
+  transition: opacity .2s;
+  padding: 10px;
+}
+
+figure:hover .description__text{
+  opacity: 1;
+}
+
+.desc_wrap{
+  border-top: 1px solid #bb3030;
+}
+
+.description__team__name{
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+}
+
+.description__team, .description__team__position{
+  font-size: 13px;
+  margin: 0;
+}
+
+.video_example{
+  background-color: #000;
+}
+
+.post-text{
+  background-color: #0088ff;
+  color: #ffffff;
+}
